@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up-o.css');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    font-family: Helvetica,sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+    color: seashell;
+}
+
+body {
+    min-width: 320px; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    border-bottom: 1px solid seashell;
+}
+  
+.navbar-logo {
+    flex: 1;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.nav-list {
+    padding: 1rem;
+    text-align: center;
+    padding-right: 0;
+}
+
+.nav-link {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.nav-link a {
+    color:seashell;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    color:white;
+    transform: translateX(0.03rem);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    
+}
+
+.logo:hover {
+    transform:scale(1.01, 1.01);
+    cursor: pointer;
+}
+
+/*  Hero Section */
+
+#hero-section  {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+
+}
+
+#hero-section .container {
+    height: 40rem;
+    width: 100%;
+    max-width: 75rem;
+    background-image: url('./images/img-mission-background.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-blend-mode:multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.mission {
+    background-color: rgba(0, 0, 0, 0.7);
+    flex: 1;
+    padding: 1.5rem;
+    max-width: 100%;
+}
+
+/*  Tea card Section */
+
+#featured-tea {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+
+#featured-tea .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 63rem;
+    width: 100%;
+}
+
+.tea-text, .tea-text h2 {
+    padding-bottom: 0.9rem;
+}
+
+.row-1, .row-1-1, .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item img {
+    max-width: 18.75rem;
+    width: 100%;
+    height: 12.5rem;
+    margin: 0.75rem;
+    opacity: 0.7;
+}
+.card-item img:hover {
+    opacity: 0.9;
+    transform: scale(1.01, 1.01);
+    border: 0.05rem solid seashell;
+
+}
+
+/*  Location card Section */
+
+#locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 1rem; 
+    
+}
+
+#locations .container {
+    height: 31.25rem;
+    width: 100%;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/img-locations-background.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-blend-mode:multiply;
+}
+
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-location {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.card-location h3, p{
+    padding: 1rem;
+}
+.card-location p{
+    font-size: 1.15rem;
+}
+
+.card-location:hover {
+    transform: scale(1.01, 1.01);
+}
+/*  Footer Section */
+
+#footer {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .container {
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h2, h5 {
+    padding: 1rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon-arrow {
+    background-color:seashell;
+    border-radius: 50%;
+    width: 3rem;
+}
+
+
+.icon-arrow:hover{
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    transform: scale(1.01, 1.01);
+    background-color:rgb(255, 255, 255);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    html{
+        scroll-padding-top: 10rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #hero-section {
+        margin-top: 11rem
+    }
+
+    #locations .container {
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        
+    }
+    .row-1, .row-1-1, .row-2, .row-3 {
+        flex-direction: column;
+    }
+
+    .card-location, .card-location h3, p {
+        padding: 0.5rem 1rem;
+        height: auto;
+        width: 90%; 
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    #locations .container {
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        
+    }
+
+    #featured-tea .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .row-1 {
+        flex-direction: column;
+    }
+
+    .card-location, .card-location h3, p {
+        padding: 0.5rem 1rem;
+        height: auto; 
+    }
+    
+}
